@@ -5,9 +5,9 @@ public class PersistentData : MonoBehaviour
 {
     public static PersistentData Instance;
 
-    public string playerName = "DefaultPlayer";
-    public string bestPlayer = "X";
-    public int bestScore = 0;
+    public string playerName;
+    public string bestPlayer;
+    public int bestScore;
 
     void Awake()
     {
@@ -37,6 +37,7 @@ public class PersistentData : MonoBehaviour
         string path = Application.persistentDataPath + "/save.txt";
         if (File.Exists(path))
         {
+            //File.Delete(path);
             StreamReader reader = new StreamReader(path);
             playerName = reader.ReadLine();
             bestPlayer = reader.ReadLine();

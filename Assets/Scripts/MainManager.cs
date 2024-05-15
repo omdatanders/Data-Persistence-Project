@@ -19,7 +19,11 @@ public class MainManager : MonoBehaviour
     
     private bool m_GameOver = false;
 
-    
+    string playerName = PersistentData.Instance.playerName;
+    string bestPlayer = PersistentData.Instance.bestPlayer;
+    int bestScore = PersistentData.Instance.bestScore;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,7 +42,8 @@ public class MainManager : MonoBehaviour
             }
         }
 
-        BestScoreText.text = $"Best Score : {PersistentData.Instance.playerName} - {PersistentData.Instance.bestScore}";
+        BestScoreText.text = $"Best Score : {bestPlayer} - {bestScore}";
+        ScoreText.text = $"Good luck {playerName}!";
     }
 
     private void Update()

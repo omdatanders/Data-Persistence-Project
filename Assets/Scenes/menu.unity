@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerName: 
-  bestPlayer: No Best Player Yet
+  bestPlayer: 
   bestScore: 0
 --- !u!4 &1763350748
 Transform:

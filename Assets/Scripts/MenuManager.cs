@@ -22,6 +22,7 @@ public class MenuManager : MonoBehaviour
 
     public void StartGame()
     {
+        PersistentData.Instance.playerName = inputField.text;
         SceneManager.LoadScene("main");
     }
 
