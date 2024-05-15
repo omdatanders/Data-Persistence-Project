@@ -6,7 +6,7 @@ public class PersistentData : MonoBehaviour
     public static PersistentData Instance;
 
     public string playerName = "DefaultPlayer";
-    public string bestPlayer = "No Best Player Yet";
+    public string bestPlayer = "X";
     public int bestScore = 0;
 
     void Awake()
